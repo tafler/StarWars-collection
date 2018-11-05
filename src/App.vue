@@ -1,14 +1,16 @@
 <template lang="pug">
-  VehicleCollect
+  router-view
 </template>
 
 <script>
 import VehicleCollect from './pages/VehicleCollect'
 import store from './store/'
+import router from './router/index'
 
 export default {
   name: 'app',
   store,
+  router,
   components: { VehicleCollect },
 }
 </script>
