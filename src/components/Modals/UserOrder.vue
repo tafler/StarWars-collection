@@ -5,13 +5,13 @@
       .order__body
         .order__field
           label(for="order__field_author") Ф.И.О
-          input(type="text" id="order__field_author" v-model="author")
+          input(type="text" id="order__field_author" v-model="author" placeholder="Фамилия Имя Отчество")
         .order__field
           label(for="order__field_phone") Телефон
-          input(type="tel" id="order__field_phone" v-model="phone")
+          input(type="tel" id="order__field_phone" v-model="phone" placeholder="+7 123 123 45 66")
         .order__field
           label(for="order__field_address") Адрес доставки
-          textarea( id="order__field_address" v-model="address")
+          textarea( id="order__field_address" v-model="address" placeholder="г. Тагил ул.Ленинина ...")
         .order__field
           label(for="order__field_date") Дата доставки
           input(type="date" id="order__field_date" v-model="date")
